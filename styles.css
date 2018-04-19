@@ -1,0 +1,152 @@
+/* Import fonts*/
+@import url('https://fonts.googleapis.com/css?family=Raleway|Roboto');
+
+/* Global styles*/
+body {
+  text-align: center;
+  margin: 0;
+  background: #31A620;
+  color: #99E98D;
+  font-family: 'Raleway', 'Roboto', 'Arial';
+}
+
+.hide {
+  display: none;
+}
+
+.container {
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+/* Header styles*/
+header {
+  background: #99E98D;
+  color: #31A620;
+  padding: 10px;
+  font-family: Raleway;
+  margin-bottom: 50px;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header img {
+  width: 60px;
+}
+
+/* Set time styles*/
+input {
+  padding: 5px;
+  border: none;
+  color: #007700;
+  font-size: 25px;
+}
+
+.setTime {
+  margin: 0 auto;
+}
+
+.work,
+.rest,
+.round {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.round > input {
+  flex-grow: 1;
+}
+
+.work-section, .rest-section {
+  display: flex;
+  margin: 3px;
+  flex-grow: 1;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+}
+
+button {
+  border: none;
+  width: calc(50%);
+  margin-top: 25px;
+  padding: 10px;
+  background: #99E98D;
+  color: #31A620;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+button:hover {
+  background: rgba(153, 233, 141, 0.7);
+  cursor: pointer;
+}
+
+/* Start time styles*/
+.startTime .container > * {
+  background: #99E98D;
+  color: #31A620;
+}
+
+.startTime h2.rounds {
+  display: flex;
+  width: 75px;
+  height: 75px;
+  margin: 0 auto;
+  border-radius: 50%;
+  font-size: 35px;
+  justify-content: center;
+  align-items: center;
+}
+
+.counter {
+  padding: 25px;
+  margin: 20px 0;
+}
+
+.counter h2.counter-name {
+  margin: 0;
+  margin-bottom: 15px;
+  font-size: 28px;
+}
+
+.counter .counter-time span {
+  font-size: 75px;
+  font-weight: bold;
+}
+
+/* Blue theme styles*/
+body.blue {
+  background: #26BEE8;
+  color: #CAE8E8;
+}
+
+.rounds.blue, header.blue, .counter.blue {
+  color: #26BEE8;
+  background: #CAE8E8;
+}
+
+/* Media queries */
+@media(max-width: 650px){
+  .container {
+    width: 90%;
+  }
+  header .container {
+    justify-content: center;
+  }
+  header img {
+    margin-right: 20px
+  }
+  header img:last-child {
+    display: none;
+  }
+}

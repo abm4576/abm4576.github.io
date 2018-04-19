@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+  <link rel="stylesheet" href="styles.css">
+  <title>Interval Timer</title>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <img src="img/logo.svg">
+      <h1>Interval Timer</h1>
+      <img src="img/logo.svg">
+    </div>
+  </header>
+  <div class="setTime">
+    <div class="container">
+      <h2>Number of Sets</h2>
+      <div class="round">
+        <input type="number" value="6" min="1" step="1" id="input-round">
+      </div>
+      <h2>Work Time</h2>
+      <div class="work">
+        <div class="work-section min">
+          <label for="input-work-minute">Minutes</label>
+          <input type="number" value="0" min="0" step="1" id="input-work-minute">
+        </div>
+        <div class="work-section sec">
+          <label for="input-work-second">Seconds</label>
+          <input type="number" value="20" min="0" max="60" step="1" id="input-work-second">
+        </div>
+      </div>
+      <h2>Rest Time</h2>
+      <div class="rest">
+        <div class="rest-section min">
+          <label for="input-work-minute">Minutes</label>
+          <input type="number" value="0" min="0"step="1" id="input-rest-minute">
+        </div>
+        <div class="rest-section sec">
+          <label for="input-work-second">Seconds</label>
+          <input type="number" value="10" min="0" max="60" step="1" id="input-rest-second">
+        </div>
+      </div>
+      <button type="button">GO</button>
+    </div>
+  </div>
+
+  <div class="startTime hide">
+    <div class="container">
+      <h2 class="rounds">3</h2>
+      <div class="counter">
+        <h2 class="counter-name">Work</h2>
+        <div class="counter-time">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
